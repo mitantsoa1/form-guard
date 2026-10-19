@@ -1,0 +1,50 @@
+{
+  "name": "form-guard",
+  "version": "0.1.0",
+  "description": "Client-side bot trap for React/Next.js forms: honeypot + too-fast-submit detection.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "test": "vitest run",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "@types/react": "^19",
+    "@types/react-dom": "^19.3.0",
+    "jsdom": "^29.1.1",
+    "react": "^19",
+    "react-dom": "^19.3.0",
+    "tsup": "^8",
+    "typescript": "^5",
+    "vitest": "^5.0.3"
+  },
+  "keywords": [
+    "honeypot",
+    "bot",
+    "anti-bot",
+    "spam",
+    "form",
+    "security",
+    "nextjs",
+    "react"
+  ]
+}
