@@ -1,5 +1,5 @@
 {
-  "name": "@mitantsoa1/form-guard",
+  "name": "@ainamitantsoa/form-guard",
   "version": "0.1.0",
   "description": "Client-side bot trap for React/Next.js forms: honeypot + too-fast-submit detection.",
   "license": "MIT",

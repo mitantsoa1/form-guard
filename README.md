@@ -7,7 +7,7 @@ Client-side bot trap for React / Next.js forms. Honeypot + "submitted too fast" 
 ## Install
 
 ```bash
-npm i @mitantsoa1/form-guard
+npm i @ainamitantsoa/form-guard
 ```
 
 ## Use
@@ -16,7 +16,7 @@ npm i @mitantsoa1/form-guard
 
 ```tsx
 "use client";
-import { useFormGuard } from "@mitantsoa1/form-guard";
+import { useFormGuard } from "@ainamitantsoa/form-guard";
 
 export default function Contact() {
   const { Honeypot, guard } = useFormGuard({
