@@ -1,8 +1,11 @@
 {
-  "name": "form-guard",
+  "name": "@mitantsoa1/form-guard",
   "version": "0.1.0",
   "description": "Client-side bot trap for React/Next.js forms: honeypot + too-fast-submit detection.",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "sideEffects": false,
   "main": "./dist/index.cjs",
